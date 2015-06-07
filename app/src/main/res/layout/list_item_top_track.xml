@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?selectableItemBackground"
+              android:orientation="horizontal"
+              android:padding="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/thumbnails_image_view"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/top_track_cc"
+        tools:background="@drawable/bg_not_picture_place_holder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:orientation="vertical"
+        tools:background="#38FF0000">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="{NAME}"/>
+
+        <TextView
+            android:id="@+id/album_text_view"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="{ALBUM}"/>
+
+    </LinearLayout>
+
+</LinearLayout>
